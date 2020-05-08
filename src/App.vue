@@ -1,28 +1,68 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <intro />
+    <featured-work v-bind:works="works" />
+    <education />
+    <contact />
+    <copyright />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Intro from "./components/Intro.vue";
+import FeaturedWork from "./components/FeaturedWork.vue";
+import Education from "./components/Education.vue";
+import Contact from "./components/Contact.vue";
+import Copyright from "./components/Copyright.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Intro,
+    FeaturedWork,
+    Education,
+    Contact,
+    Copyright
+  },
+  data() {
+    return {
+      works: [
+        {
+          id: 1,
+          title: "Study Buddy",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
+            "galley of type and scrambled it to make a type specimen book.",
+          image: require('@/assets/img/StudyBuddy/StudyBuddy1.jpg'),
+          imageDesc: "Study Buddy Cover",
+          skills: ["SQL", "Outsystems", "Responsive", "Javascript"]
+        },
+        {
+          id: 2,
+          title: "Graduate Assistant Tuition Waiver",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
+            "galley of type and scrambled it to make a type specimen book.",
+          imageUrl: "",
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+        },
+        {
+          id: 3,
+          title: "KSU Workflow Management",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
+            "galley of type and scrambled it to make a type specimen book.",
+          imageUrl: "",
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+        }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
