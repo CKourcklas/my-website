@@ -1,10 +1,11 @@
 <template>
   <div id="featuredWork" class="pb-20">
     <div class="text-4xl md:text-6xl font-bold mt-16 text-center">Featured Work</div>
-    <div v-bind:key="work.id" v-for="work in works">
+    <div v-bind:key="index" v-for="(work, index) in works">
       <Work
-        v-bind:work="work"
-        class="flex flex-col md:flex-row justify-center items-center mt-8 md:mt-24"
+        v-bind:work="work" :index="index"
+        class="flex flex-col justify-center items-center mt-8 md:mt-24"
+        :class="{'md:flex-row-reverse':(index % 2 !== 0), 'md:flex-row':(index % 2 === 0)}"
       />
     </div>
   </div>

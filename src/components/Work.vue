@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="h-64 w-64 m-size-550 md:relative md:border-8" style="border-color: #ed8936">
+    <div
+      class="h-64 w-64 m-size-550 md:relative md:border-8"
+      :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
+    >
       <img
         v-bind:src="work.image"
         :alt="work.imageDesc"
@@ -28,7 +31,7 @@
 <script>
 export default {
   name: "work",
-  props: ["work"]
+  props: ["work", "index"]
 };
 </script>
 

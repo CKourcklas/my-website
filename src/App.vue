@@ -28,7 +28,6 @@ export default {
     return {
       works: [
         {
-          id: 1,
           title: "Study Buddy",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
@@ -39,7 +38,6 @@ export default {
           skills: ["SQL", "Outsystems", "Responsive", "Javascript"]
         },
         {
-          id: 2,
           title: "Graduate Assistant Tuition Waiver",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
@@ -49,7 +47,6 @@ export default {
           skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
         },
         {
-          id: 3,
           title: "KSU Workflow Management",
           description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
