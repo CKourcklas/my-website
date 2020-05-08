@@ -5,7 +5,7 @@
       <Work
         v-bind:work="work" :index="index"
         class="flex flex-col justify-center items-center mt-8 md:mt-24"
-        :class="{'md:flex-row-reverse':(index % 2 !== 0), 'md:flex-row':(index % 2 === 0)}"
+        :class="(index % 2 !== 0) ? 'md:flex-row-reverse': 'md:flex-row'"
       />
     </div>
   </div>
