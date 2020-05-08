@@ -8,7 +8,8 @@
         v-bind:src="work.image"
         :alt="work.imageDesc"
         class="m-size-550 md:absolute shadow object-cover"
-        style="right: 40px; bottom: 25px;"
+        :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
+        style="bottom: 25px;"
       />
     </div>
     <div class="md:w-16"></div>
