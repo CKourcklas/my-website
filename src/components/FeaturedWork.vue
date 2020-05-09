@@ -1,6 +1,6 @@
 <template>
   <div id="featuredWork" class="pb-20">
-    <div class="text-4xl md:text-6xl font-bold mt-16 text-center">Featured Work</div>
+    <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
     <div v-bind:key="index" v-for="(work, index) in works">
       <Work
         v-bind:work="work" :index="index"
