@@ -18,6 +18,8 @@ import Copyright from "./components/Copyright.vue";
 import StudyBuddyCoverImage from "@/assets/img/StudyBuddy/StudyBuddy1.jpg";
 import GTWCoverImage from "@/assets/img/GTW/GTW1.jpg";
 import KSUWFCoverImage from "@/assets/img/KSUWF/KSUWF1.jpg";
+import ETWCoverImage from "@/assets/img/ETW/ETW1.jpg";
+import MMPCoverImage from "@/assets/img/MMP/MMP1.jpg";
 
 export default {
   name: "App",
@@ -57,6 +59,24 @@ export default {
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
           image: KSUWFCoverImage,
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+        },
+        {
+          title: "Employee Transaction Workflow",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
+            "galley of type and scrambled it to make a type specimen book.",
+          image: ETWCoverImage,
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+        },
+        {
+          title: "Manage My Program",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
+            "galley of type and scrambled it to make a type specimen book.",
+          image: MMPCoverImage,
           skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
         }
       ]

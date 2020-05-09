@@ -7,7 +7,7 @@
       <img
         v-bind:src="work.image"
         :alt="work.imageDesc"
-        class="m-size-550 md:absolute md:shadow-2xl object-cover m-border-black"
+        class="m-size-550 md:absolute md:shadow-2xl object-cover object-left-top m-border-black"
         :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
         style="bottom: 25px;"
       />
