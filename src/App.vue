@@ -17,7 +17,7 @@ import Copyright from "./components/Copyright.vue";
 
 import StudyBuddyCoverImage from "@/assets/img/StudyBuddy/StudyBuddy1.jpg";
 import GTWCoverImage from "@/assets/img/GTW/GTW1.jpg";
-// import KSUWFCoverImage from "";
+import KSUWFCoverImage from "@/assets/img/KSUWF/KSUWF1.jpg";
 
 export default {
   name: "App",
@@ -56,7 +56,7 @@ export default {
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
-          image: "KSUWFCoverImage",
+          image: KSUWFCoverImage,
           skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
         }
       ]
