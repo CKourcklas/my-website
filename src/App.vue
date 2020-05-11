@@ -2,7 +2,7 @@
   <div id="app">
     <intro />
     <featured-work v-bind:works="works" />
-    <education />
+    <education v-bind:education="education" />
     <contact />
     <copyright />
   </div>
@@ -78,6 +78,26 @@ export default {
             "galley of type and scrambled it to make a type specimen book.",
           image: MMPCoverImage,
           skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+        }
+      ],
+      education: [
+        {
+          degree: "Bachelor of Business Administration",
+          fieldOfStudy: "Marketing",
+          institution: "The University of Akron",
+          years: "2009-2013"
+        },
+        {
+          degree: "Associate of Applied Business",
+          fieldOfStudy: "Programming and Development",
+          institution: "Cuyahoga Community College",
+          years: "2015-2017"
+        },
+        {
+          degree: "Master of Science",
+          fieldOfStudy: "Digital Sciences",
+          institution: "Kent State University",
+          years: "2019-Present"
         }
       ]
     };
