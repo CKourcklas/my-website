@@ -89,7 +89,7 @@ export default {
         },
         {
           degree: "Associate of Applied Business",
-          fieldOfStudy: "Programming and Development",
+          fieldOfStudy: "Programming",
           institution: "Cuyahoga Community College",
           years: "2015-2017"
         },
