@@ -4,15 +4,15 @@
     <div class="flex flex-col md:flex-row justify-center items-center md:justify-evenly mt-12">
       <div
         v-bind:key="index"
-        v-for="(education, index) in education"
+        v-for="(educationItem, index) in educationItem"
         class="p-6 text-center mt-5 md:mt-0"
         style="background-color: #e2e8f0; border: 3px solid black; width: 450px;"
       >
-        <div class="font-bold text-lg uppercase">{{education.degree}}</div>
+        <div class="font-bold text-lg uppercase">{{educationItem.degree}}</div>
         <div class="border-2 rounded-lg mt-3" style="border-color: #ed8936;"></div>
-        <div class="mt-3 text-4xl font-bold" style="color: #052371;">{{education.fieldOfStudy}}</div>
-        <div class="mt-3">{{education.institution}}</div>
-        <div>{{education.years}}</div>
+        <div class="mt-3 text-4xl font-bold" style="color: #052371;">{{educationItem.fieldOfStudy}}</div>
+        <div class="mt-3">{{educationItem.institution}}</div>
+        <div>{{educationItem.years}}</div>
       </div>
     </div>
   </div>
@@ -22,7 +22,31 @@
 export default {
   name: "Education",
   components: {},
-  props: ["education"]
+  data() {
+    return {
+      educationItem: [
+        {
+          degree: "Associate of Applied Business",
+          fieldOfStudy: "Programming",
+          institution: "Cuyahoga Community College",
+          years: "2015-2017"
+        },
+        {
+          degree: "Bachelor of Business Administration",
+          fieldOfStudy: "Marketing",
+          institution: "The University of Akron",
+          years: "2009-2013"
+        },
+
+        {
+          degree: "Master of Science",
+          fieldOfStudy: "Digital Sciences",
+          institution: "Kent State University",
+          years: "2019-Present"
+        }
+      ]
+    };
+  }
 };
 </script>
 
