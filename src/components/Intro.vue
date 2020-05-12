@@ -5,7 +5,7 @@
   >
     <div class="border-0 md:border-8 md:relative border-orange-500 positionDiv">
       <img
-        src='../assets/img/Sample.jpg'
+        src="../assets/img/Sample.jpg"
         alt="Portrait"
         class="border-2 border-white md:absolute top"
         style="top: 29px; left: 33px;"
@@ -28,13 +28,18 @@
       </div>
       <div class="mt-8" style="border: 2px solid #ed8936; border-radius: 5px;"></div>
     </div>
+    <buttonLinksComp />
   </div>
 </template>
 
 <script>
+import ButtonLinksComp from "./ButtonLinks.vue";
+
 export default {
   name: "Intro",
-  components: {}
+  components: {
+    ButtonLinksComp
+  }
 };
 </script>
 
