@@ -5,8 +5,8 @@
       <div
         v-bind:key="index"
         v-for="(educationItem, index) in educationItem"
-        class="p-6 text-center mt-5 md:mt-0"
-        style="background-color: #e2e8f0; border: 3px solid black; width: 450px;"
+        class="p-6 text-center mt-5 md:mt-0 r-width"
+        style="background-color: #e2e8f0; border: 3px solid black;"
       >
         <div class="font-bold text-lg uppercase">{{educationItem.degree}}</div>
         <div class="border-2 rounded-lg mt-3" style="border-color: #ed8936;"></div>
@@ -54,6 +54,13 @@ export default {
 @media (min-width: 768px) {
   .md-border-8 {
     border-width: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .r-width{
+    width: 450px;
+    min-width: 350px;
   }
 }
 </style>

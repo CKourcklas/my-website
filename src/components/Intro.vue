@@ -18,28 +18,20 @@
       </div>
       <div class="md:text-3xl mt-4">Full Stack Developer with 4+ years experience</div>
       <div class="md:text-xl mt-2">Specializing in ASP.NET, Outsystems, SQL, and front end design</div>
-      <div class="flex justify-center md:justify-start mt-6">
-        <a href="https://www.google.com" target="-_blank" class="button buttonMain">Resume</a>
-        <a
-          href="https://www.linkedin.com"
-          target="-_blank"
-          class="button buttonSecondary ml-6"
-        >LinkedIn</a>
+      <div class="flex justify-between md:justify-start md:mt-5">
+        <a href="https://www.google.com" target="_blank" class="button buttonMain">Resume</a>
+        <a href="https://www.linkedin.com" target="_blank" class="button buttonSecondary md:ml-6">LinkedIn</a>
+        <a href="mailto:ckourcklas@gmail.com" target="_blank" class="button buttonSecondary md:ml-6">Email</a>
       </div>
       <div class="mt-8" style="border: 2px solid #ed8936; border-radius: 5px;"></div>
     </div>
-    <buttonLinksComp />
   </div>
 </template>
 
 <script>
-import ButtonLinksComp from "./ButtonLinks.vue";
-
 export default {
   name: "Intro",
-  components: {
-    ButtonLinksComp
-  }
+  components: {}
 };
 </script>
 
