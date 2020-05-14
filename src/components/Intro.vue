@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style scoped>
+.introBackground {
+  background: linear-gradient(to bottom right, #00206c 0%, #004cb8 100%);
+}
+
 @media (min-width: 768px) {
   .positionDiv {
     height: 25rem;
@@ -47,10 +51,6 @@ export default {
   .text-7xl {
     font-size: 5rem;
   }
-}
-
-.introBackground {
-  background: linear-gradient(to bottom right, #00206c 0%, #004cb8 100%);
 }
 
 .button {
