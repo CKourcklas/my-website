@@ -1,7 +1,7 @@
 <template>
   <div
     id="intro"
-    class="flex flex-col md:flex-row justify-center items-center h-screen text-white introBackground"
+    class="flex flex-col md:flex-row justify-center items-center md:h-screen text-white introBackground pt-8 md:pt-0"
   >
     <div class="border-0 md:border-8 md:relative border-orange-500 positionDiv">
       <img
@@ -18,10 +18,28 @@
       </div>
       <div class="md:text-3xl mt-4">Full Stack Developer with 4+ years experience</div>
       <div class="md:text-xl mt-2">Specializing in ASP.NET, Outsystems, SQL, and front end design</div>
-      <div class="flex justify-between md:justify-start md:mt-5">
-        <a href="https://www.google.com" target="_blank" class="button buttonMain">Resume</a>
-        <a href="https://www.linkedin.com" target="_blank" class="button buttonSecondary md:ml-6">LinkedIn</a>
-        <a href="mailto:ckourcklas@gmail.com" target="_blank" class="button buttonSecondary md:ml-6">Email</a>
+      <div class="px-8 md:px-0 mt-4 md:mt-0 flex flex-col md:flex-row md:justify-start md:mt-5">
+        <div class="text-center flex">
+          <a
+            href="https://resume.io/r/GjepeXQ8c"
+            target="_blank"
+            class="button buttonMain w-full"
+          >Resume</a>
+        </div>
+        <div class="text-center flex md:ml-6 mt-4 md:mt-0">
+          <a
+            href="https://www.linkedin.com/in/cory-kourcklas-6264451aa/"
+            target="_blank"
+            class="button buttonSecondary w-full"
+          >LinkedIn</a>
+        </div>
+        <div class="text-center flex md:ml-6 mt-4 md:mt-0">
+          <a
+            href="mailto:ckourcklas@gmail.com"
+            target="_blank"
+            class="button buttonSecondary w-full"
+          >Email</a>
+        </div>
       </div>
       <div class="mt-8" style="border: 2px solid #ed8936; border-radius: 5px;"></div>
     </div>

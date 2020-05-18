@@ -4,9 +4,9 @@
       <span class="text-2xl md:text-5xl">Looking for a developer?</span>
     </div>
     <div class="flex flex-col md:flex-row justify-center mt-6">
-      <a href="https://www.google.com" target="_blank" class="button buttonMain">Resume</a>
+      <a href="https://resume.io/r/GjepeXQ8c" target="_blank" class="button buttonMain">Resume</a>
       <a
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/cory-kourcklas-6264451aa/"
         target="_blank"
         class="button buttonSecondary mt-4 md:mt-0 md:ml-6"
         style="flex: 0 0 50px;"

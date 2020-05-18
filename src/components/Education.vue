@@ -1,16 +1,16 @@
 <template>
-  <div id="education" class="pb-20" style="background-color: rgb(237, 137, 54);">
+  <div id="education" class="pb-20 px-4" style="background-color: rgb(237, 137, 54);">
     <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center pt-12">Education</div>
-    <div class="flex flex-col md:flex-row justify-center items-center md:justify-evenly mt-12">
+    <div class="flex flex-col md:flex-row justify-center items-center md:justify-evenly mt-5 md:mt-12">
       <div
         v-bind:key="index"
         v-for="(educationItem, index) in educationItem"
         class="p-6 text-center mt-5 md:mt-0 r-width"
         style="background-color: #e2e8f0; border: 3px solid black;"
       >
-        <div class="font-bold text-lg uppercase">{{educationItem.degree}}</div>
+        <div class="font-bold md:text-lg uppercase">{{educationItem.degree}}</div>
         <div class="border-2 rounded-lg mt-3" style="border-color: #ed8936;"></div>
-        <div class="mt-3 text-4xl font-bold" style="color: #052371;">{{educationItem.fieldOfStudy}}</div>
+        <div class="mt-3 text-xl md:text-4xl font-bold" style="color: #052371; min-width: 275px;">{{educationItem.fieldOfStudy}}</div>
         <div class="mt-3">{{educationItem.institution}}</div>
         <div>{{educationItem.years}}</div>
       </div>
