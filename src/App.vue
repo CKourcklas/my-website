@@ -50,7 +50,7 @@ export default {
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
           image: GTWCoverImage,
-          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four", "Skill Five"]
         },
         {
           title: "KSU Workflow Management",
@@ -59,7 +59,7 @@ export default {
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
           image: KSUWFCoverImage,
-          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four"]
+          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four", "Skill Five"]
         },
         {
           title: "Employee Transaction Workflow",
