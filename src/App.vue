@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <slideshow class="display-none" />
     <intro />
     <featured-work v-bind:works="works" />
     <education />
@@ -14,6 +15,7 @@ import FeaturedWork from "./components/FeaturedWork.vue";
 import Education from "./components/Education.vue";
 import Contact from "./components/Contact.vue";
 import Copyright from "./components/Copyright.vue";
+import Slideshow from "./components/Slideshow.vue";
 
 import StudyBuddyCoverImage from "@/assets/img/StudyBuddy/StudyBuddy1.jpg";
 import GTWCoverImage from "@/assets/img/GTW/GTW1.jpg";
@@ -28,7 +30,8 @@ export default {
     FeaturedWork,
     Education,
     Contact,
-    Copyright
+    Copyright,
+    Slideshow
   },
   data() {
     return {
@@ -50,7 +53,13 @@ export default {
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
           image: GTWCoverImage,
-          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four", "Skill Five"]
+          skills: [
+            "Skill One",
+            "Skill Two",
+            "Skill Three",
+            "Skill Four",
+            "Skill Five"
+          ]
         },
         {
           title: "KSU Workflow Management",
@@ -59,7 +68,13 @@ export default {
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
             "galley of type and scrambled it to make a type specimen book.",
           image: KSUWFCoverImage,
-          skills: ["Skill One", "Skill Two", "Skill Three", "Skill Four", "Skill Five"]
+          skills: [
+            "Skill One",
+            "Skill Two",
+            "Skill Three",
+            "Skill Four",
+            "Skill Five"
+          ]
         },
         {
           title: "Employee Transaction Workflow",
@@ -86,5 +101,4 @@ export default {
 </script>
 
 <style>
-
 </style>
