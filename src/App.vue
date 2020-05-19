@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <slideshow class="display-none" />
+    <slideshow style="display: none;"/>
     <intro />
     <featured-work v-bind:works="works" />
     <education />
