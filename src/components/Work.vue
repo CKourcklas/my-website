@@ -4,7 +4,7 @@
       class="h-full w-full m-size-550 md:relative md:border-8"
       :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
     >
-      <a @click="test">
+      <a @click="test(work.title)">
         <img
           v-bind:src="work.image"
           :alt="work.imageDesc"
@@ -35,8 +35,8 @@ export default {
   name: "work",
   props: ["work", "index"],
   methods: {
-    test: function() {
-      console.log("Test");
+    test: function(workTitle) {
+      return console.log(workTitle);
     }
   }
 };
