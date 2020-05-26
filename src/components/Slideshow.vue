@@ -1,13 +1,13 @@
 <template>
-  <div class="h-screen w-screen">
+  <div class="h-screen w-screen" style="position: relative;">
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
       </div>
     </transition-group>
-    <a class="close" @click="close" href="#">&#10005; Close</a>
-    <a class="prev" @click="prev" href="#">&#10094; Previous</a>
-    <a class="next" @click="next" href="#">&#10095; Next</a>
+    <a class="close" @click="close" href="javascript:void();">&#10005; Close</a>
+    <a class="prev" @click="prev" href="javascript:void();">&#10094; Previous</a>
+    <a class="next" @click="next" href="javascript:void();">&#10095; Next</a>
   </div>
 </template>
 
@@ -65,8 +65,8 @@ export default {
 }
 
 img {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .prev,

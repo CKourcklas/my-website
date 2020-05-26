@@ -1,23 +1,29 @@
 <template>
-  <div id="featuredWork" class="pb-6 md:pb-20">
-    <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
-    <div v-bind:key="index" v-for="(work, index) in works">
-      <Work
-        v-bind:work="work" :index="index"
-        class="flex flex-col justify-center items-center mt-8 md:mt-24"
-        :class="(index % 2 !== 0) ? 'md:flex-row-reverse': 'md:flex-row'"
-      />
+  <div>
+    <slideshow v-show="false"/>
+    <div id="featuredWork" class="pb-6 md:pb-20">
+      <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
+      <div v-bind:key="index" v-for="(work, index) in works">
+        <Work
+          v-bind:work="work"
+          :index="index"
+          class="flex flex-col justify-center items-center mt-8 md:mt-24"
+          :class="(index % 2 !== 0) ? 'md:flex-row-reverse': 'md:flex-row'"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Work from "./Work.vue";
+import Slideshow from "./Slideshow.vue";
 
 export default {
   name: "FeaturedWork",
   components: {
-    Work
+    Work,
+    Slideshow
   },
   props: ["works"]
 };

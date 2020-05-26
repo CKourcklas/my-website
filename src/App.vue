@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <slideshow style="display: none;"/>
     <intro />
     <featured-work v-bind:works="works" />
     <education />
@@ -15,7 +14,6 @@ import FeaturedWork from "./components/FeaturedWork.vue";
 import Education from "./components/Education.vue";
 import Contact from "./components/Contact.vue";
 import Copyright from "./components/Copyright.vue";
-import Slideshow from "./components/Slideshow.vue";
 
 import StudyBuddyCoverImage from "@/assets/img/StudyBuddy/StudyBuddy1.jpg";
 import GTWCoverImage from "@/assets/img/GTW/GTW1.jpg";
@@ -30,8 +28,7 @@ export default {
     FeaturedWork,
     Education,
     Contact,
-    Copyright,
-    Slideshow
+    Copyright
   },
   data() {
     return {
