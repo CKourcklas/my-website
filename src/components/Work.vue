@@ -36,7 +36,7 @@ export default {
   props: ["work", "index"],
   methods: {
     test: function(workTitle) {
-      return console.log(workTitle);
+      console.log(workTitle);
     }
   }
 };

@@ -40,6 +40,13 @@
             class="button buttonSecondary w-full"
           >Email</a>
         </div>
+        <div class="text-center flex md:ml-6 mt-4 md:mt-0">
+          <a
+            href="https://github.com/CKourcklas/"
+            target="_blank"
+            class="button buttonSecondary w-full"
+          >Github</a>
+        </div>
       </div>
       <div class="mt-8" style="border: 2px solid #ed8936; border-radius: 5px;"></div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div id="education" class="pb-20 px-4" style="background-color: rgb(237, 137, 54);">
+  <div id="education" class="pb-20 px-4" style="background-color: rgba(237, 137, 54, 0.75)">
     <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center pt-12">Education</div>
     <div class="flex flex-col flex-wrap md:flex-row justify-center items-center md:justify-evenly mt-5 md:mt-12">
       <div

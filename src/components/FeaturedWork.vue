@@ -1,6 +1,6 @@
 <template>
   <div>
-    <slideshow v-show="false"/>
+    <slideshow v-show="false" />
     <div id="featuredWork" class="pb-6 md:pb-20">
       <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
       <div v-bind:key="index" v-for="(work, index) in works">
