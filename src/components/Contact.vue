@@ -16,6 +16,11 @@
         target="_blank"
         class="button buttonSecondary mt-4 md:mt-0 md:ml-6"
       >Email</a>
+      <a
+        href="https://github.com/CKourcklas/"
+        target="_blank"
+        class="button buttonSecondary mt-4 md:mt-0 md:ml-6"
+      >Github</a>
     </div>
   </div>
 </template>

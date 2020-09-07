@@ -46,7 +46,7 @@ export default {
 @media (min-width: 768px) {
   .m-size-550 {
     height: 550px;
-    width: 550px;
+    width: 998px;
   }
 }
 
