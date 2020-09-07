@@ -82,7 +82,13 @@ export default {
             "Manage My Program is the application students use to manage Majors, Minors, and Certificates at Kent State University. Students can see approved changes to their program in real-time. To date, over 30,000 " +
             "students have made changes to their program using MMP.",
           image: MMPCoverImage,
-          skills: ["SQL", "Outsystems", "BPT (Workflow)", "CI/CD", "Business Systems Analysis"],
+          skills: [
+            "SQL",
+            "Outsystems",
+            "BPT (Workflow)",
+            "CI/CD",
+            "Business Systems Analysis",
+          ],
         },
       ],
     };

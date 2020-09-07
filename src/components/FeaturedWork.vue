@@ -9,6 +9,7 @@
           :index="index"
           class="flex flex-col justify-center items-center mt-8 md:mt-24"
           :class="(index % 2 !== 0) ? 'md:flex-row-reverse': 'md:flex-row'"
+          @show-slides="showslides(work)"
         />
       </div>
     </div>
@@ -23,9 +24,14 @@ export default {
   name: "FeaturedWork",
   components: {
     Work,
-    Slideshow
+    Slideshow,
   },
-  props: ["works"]
+  props: ["works"],
+  methods: {
+    showslides(work) {
+      console.log(work);
+    },
+  },
 };
 </script>
 

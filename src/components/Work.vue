@@ -4,7 +4,7 @@
       class="h-full w-full m-size-550 md:relative md:border-8"
       :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
     >
-      <a @click="test(work.title)">
+      <a @click="outputClickedWork(work)">
         <img
           v-bind:src="work.image"
           :alt="work.imageDesc"
@@ -35,10 +35,10 @@ export default {
   name: "work",
   props: ["work", "index"],
   methods: {
-    test: function(workTitle) {
-      console.log(workTitle);
-    }
-  }
+    outputClickedWork(work) {
+      this.$emit('show-slides', work);
+    },
+  },
 };
 </script>
 
