@@ -1,6 +1,5 @@
 <template>
   <div>
-    <slideshow v-if="isShowingSlides" v-bind:workToShowSlides="workToShowSlides" />
     <div id="featuredWork" class="pb-6 md:pb-20">
       <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
       <div v-bind:key="index" v-for="(work, index) in worksInput">
@@ -18,7 +17,6 @@
 
 <script>
 import Work from "./Work.vue";
-import Slideshow from "./Slideshow.vue";
 
 export default {
   data() {
@@ -28,8 +26,7 @@ export default {
   },
   name: "FeaturedWork",
   components: {
-    Work,
-    Slideshow,
+    Work
   },
   props: ["worksInput"],
   methods: {

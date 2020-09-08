@@ -10,6 +10,7 @@
           :alt="work.imageDesc"
           class="m-size-550 md:absolute md:shadow-2xl object-cover object-center m-border-black cursor-pointer"
           :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
+          style="transition: all 150ms ease-in-out 0s;"
           @click="updateSlideshow(work.slidesLength)"
         />
       </a>
@@ -75,6 +76,22 @@ img:hover {
 
 img {
   bottom: 25px;
-  transition: all 150ms ease-in-out 0s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.9s ease;
+  overflow: hidden;
+  visibility: visible;
+  position: absolute;
+  width: 100vw;
+  opacity: 1;
+}
+
+.fade-enter,
+.fade-leave-to {
+  visibility: hidden;
+  width: 100%;
+  opacity: 0;
 }
 </style>

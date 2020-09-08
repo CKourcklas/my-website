@@ -38,9 +38,9 @@ export default {
             require("../src/assets/img/StudyBuddy/StudyBuddy1.jpg"),
             require("../src/assets/img/StudyBuddy/StudyBuddy2.jpg"),
             require("../src/assets/img/StudyBuddy/StudyBuddy3.jpg"),
-            require("../src/assets/img/StudyBuddy/Studybuddy4.jpg")
+            require("../src/assets/img/StudyBuddy/Studybuddy4.jpg"),
           ],
-          slidesLength: 3
+          slidesLength: 3,
         },
         {
           title: "Graduate Assistant Tuition Waiver",
@@ -59,7 +59,7 @@ export default {
             require("../src/assets/img/GTW/GTW3.jpg"),
             require("../src/assets/img/GTW/GTW4.jpg"),
           ],
-          slidesLength: 3
+          slidesLength: 3,
         },
         {
           title: "KSU Workflow Management",
@@ -78,7 +78,7 @@ export default {
             require("../src/assets/img/KSUWF/KSUWF3.jpg"),
             require("../src/assets/img/KSUWF/KSUWF4.jpg"),
           ],
-          slidesLength: 3
+          slidesLength: 3,
         },
         {
           title: "PayOnline",
@@ -91,7 +91,7 @@ export default {
             require("../src/assets/img/PayOnline/PayOnline2.jpg"),
             require("../src/assets/img/PayOnline/PayOnline3.jpg"),
           ],
-          slidesLength: 2
+          slidesLength: 2,
         },
         {
           title: "Manage My Program",
@@ -112,7 +112,7 @@ export default {
             require("../src/assets/img/MMP/MMP3.jpg"),
             require("../src/assets/img/MMP/MMP4.jpg"),
           ],
-          slidesLength: 3
+          slidesLength: 3,
         },
       ],
     };
