@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div v-if="isShowingSlides">
-      <slideshow />
-    </div>
+    <slideshow v-if="isShowingSlides" v-bind:workToShowSlides="workToShowSlides" />
     <div id="featuredWork" class="pb-6 md:pb-20">
       <div class="mt-8 text-4xl md:text-6xl font-bold md:mt-16 text-center">Featured Work</div>
-      <div v-bind:key="index" v-for="(work, index) in works">
-        <Work
+      <div v-bind:key="index" v-for="(work, index) in worksInput">
+        <work
           v-bind:work="work"
           :index="index"
           class="flex flex-col justify-center items-center mt-8 md:mt-24"
@@ -33,10 +31,10 @@ export default {
     Work,
     Slideshow,
   },
-  props: ["works"],
+  props: ["worksInput"],
   methods: {
     showslides(work) {
-      if ((this.isShowingSlides === false)) {
+      if (this.isShowingSlides === false) {
         this.isShowingSlides = true;
       } else {
         this.isShowingSlides = false;

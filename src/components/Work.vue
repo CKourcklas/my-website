@@ -4,12 +4,13 @@
       class="h-full w-full m-size-550 md:relative md:border-8"
       :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
     >
-      <a @click="outputClickedWork(work)">
+      <a>
         <img
-          v-bind:src="work.image"
+          v-bind:src="work.slides[slideIndex]"
           :alt="work.imageDesc"
-          class="m-size-550 md:absolute md:shadow-2xl object-cover object-left-top m-border-black cursor-pointer"
+          class="m-size-550 md:absolute md:shadow-2xl object-cover object-center m-border-black cursor-pointer"
           :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
+          @click="updateSlideshow(work.slidesLength)"
         />
       </a>
     </div>
@@ -32,11 +33,23 @@
 
 <script>
 export default {
+  data() {
+    return {
+      slideIndex: 0,
+    };
+  },
   name: "work",
   props: ["work", "index"],
   methods: {
     outputClickedWork(work) {
-      this.$emit('show-slides', work);
+      this.$emit("show-slides", work);
+    },
+    updateSlideshow(length) {
+      if (this.slideIndex < length) {
+        this.slideIndex = this.slideIndex + 1;
+      } else {
+        this.slideIndex = 0;
+      }
     },
   },
 };

@@ -17,7 +17,9 @@
         <span class="m-2" style="color: #ed8936">Kourcklas</span>
       </div>
       <div class="md:text-3xl mt-4">Full Stack Developer with 4+ years experience</div>
-      <div class="md:text-xl mt-2">Specializing in ASP.NET, Outsystems, SQL, and Business Systems Analysis</div>
+      <div
+        class="md:text-xl mt-2"
+      >Specializing in .NET Framework, Outsystems, SQL, and Business Systems Analysis</div>
       <div class="px-8 md:px-0 mt-4 md:mt-0 flex flex-col md:flex-row md:justify-start md:mt-5">
         <div class="text-center flex">
           <a
@@ -56,7 +58,7 @@
 <script>
 export default {
   name: "Intro",
-  components: {}
+  components: {},
 };
 </script>
 

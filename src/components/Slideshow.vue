@@ -20,29 +20,30 @@ export default {
         "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
         "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
         "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
+        "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg",
       ],
-      currentIndex: 0
+      currentIndex: 0,
     };
   },
+  props: ["workToShowSlides"],
 
   methods: {
-    next: function() {
+    next: function () {
       this.currentIndex += 1;
     },
-    prev: function() {
+    prev: function () {
       this.currentIndex -= 1;
     },
-    close: function() {
+    close: function () {
       this.currentIndex = 0;
-    }
+    },
   },
 
   computed: {
-    currentImg: function() {
+    currentImg: function () {
       return this.images[Math.abs(this.currentIndex) % this.images.length];
-    }
-  }
+    },
+  },
 };
 </script>
 
