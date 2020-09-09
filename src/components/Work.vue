@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="h-full w-full m-size-550 md:relative md:border-8"
+      class="h-full w-full m-size-550 md:relative md:border-8 hidden md:block"
       :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
     >
       <a>
@@ -20,11 +20,11 @@
       <div class="text-lg md:text-4xl font-bold">{{work.title}}</div>
       <div class="mt-4">{{work.description}}</div>
       <div class="mt-6 md:mt-12 uppercase font-bold md:text-lg">Skills Used</div>
-      <div class="flex flex-wrap justify-center md:justify-start mt-4">
+      <div class="flex flex-wrap justify-evenly mt-4">
         <div
           v-bind:key="skill.index"
           v-for="skill in work.skills"
-          class="font-bold text-lg bg-gray-300 rounded-lg mt-5 mr-5 p-4 text-center"
+          class="font-bold text-lg bg-gray-300 rounded-lg mt-5 p-4 text-center"
           style="min-width: 6rem;"
         >{{skill}}</div>
       </div>
@@ -65,6 +65,18 @@ export default {
 }
 
 @media (min-width: 768px) {
+  .m-display {
+    display: block;
+  }
+}
+
+@media (max-width: 400){
+  .s-hide{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
   .m-border-black {
     border: 1px solid black;
   }
@@ -76,22 +88,5 @@ img:hover {
 
 img {
   bottom: 25px;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.9s ease;
-  overflow: hidden;
-  visibility: visible;
-  position: absolute;
-  width: 100vw;
-  opacity: 1;
-}
-
-.fade-enter,
-.fade-leave-to {
-  visibility: hidden;
-  width: 100%;
-  opacity: 0;
 }
 </style>

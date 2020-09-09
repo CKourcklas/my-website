@@ -6,7 +6,7 @@
         <work
           v-bind:work="work"
           :index="index"
-          class="flex flex-col justify-center items-center mt-8 md:mt-24"
+          class="flex flex-col justify-center items-center mt-8 md:mt-32"
           :class="(index % 2 !== 0) ? 'md:flex-row-reverse': 'md:flex-row'"
           @show-slides="showslides(work)"
         />

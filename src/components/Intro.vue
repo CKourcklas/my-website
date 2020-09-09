@@ -1,7 +1,7 @@
 <template>
   <div
     id="intro"
-    class="flex flex-col md:flex-row justify-center items-center md:h-screen text-white introBackground pt-8 md:pt-0"
+    class="flex flex-col md:flex-row justify-center items-center md:h-screen text-white introBackground p-4 md:p-0"
   >
     <div class="border-0 md:border-8 md:relative border-orange-500 positionDiv">
       <img
