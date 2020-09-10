@@ -38,7 +38,7 @@ export default {
             require("../src/assets/img/StudyBuddy/StudyBuddy1.jpg"),
             require("../src/assets/img/StudyBuddy/StudyBuddy2.jpg"),
             require("../src/assets/img/StudyBuddy/StudyBuddy3.jpg"),
-            require("../src/assets/img/StudyBuddy/Studybuddy4.jpg"),
+            require("../src/assets/img/StudyBuddy/StudyBuddy4.jpg"),
           ],
           slidesLength: 3,
         },

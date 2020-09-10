@@ -1,16 +1,20 @@
 <template>
-  <div>
+  <div class="px-4">
     <div
-      class="h-full w-full m-size-550 md:relative md:border-8 hidden md:block"
+      class="h-full w-full md:relative md:border-8 hidden md:block"
       :style="[(index % 2 !== 0) ? {'border-color': '#004cb8'} : {'border-color': '#ed8936'}]"
+      style="height: 550px; width: 750px;"
     >
       <a>
         <img
           v-bind:src="work.slides[slideIndex]"
           :alt="work.imageDesc"
-          class="m-size-550 md:absolute md:shadow-2xl object-cover object-center m-border-black cursor-pointer"
+          class="md:absolute md:shadow-2xl m-border-black cursor-pointer"
           :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
-          style="transition: all 150ms ease-in-out 0s;"
+          style="transition: all 150ms ease-in-out 0s; width:100%;
+   height:550px;
+   object-fit:cover;
+   object-position:50% 50%;"
           @click="updateSlideshow(work.slidesLength)"
         />
       </a>
