@@ -12,9 +12,9 @@
           class="md:absolute md:shadow-2xl m-border-black cursor-pointer"
           :style="[(index % 2 !== 0) ? {'left': '40px'} : {'right': '40px'}]"
           style="transition: all 150ms ease-in-out 0s; width:100%;
-   height:550px;
-   object-fit:cover;
-   object-position:50% 50%;"
+                  height:550px;
+                  object-fit:cover;
+                  object-position:50% 50%;"
           @click="updateSlideshow(work.slidesLength)"
         />
       </a>
